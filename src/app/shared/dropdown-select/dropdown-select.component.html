@@ -1,0 +1,47 @@
+<div class="select-element">
+  <mat-form-field
+    class = "select-element__form-filed">
+    <span
+      [ngClass] = "{
+        'up_arrow': isPanelOpen
+        }"
+      class="select-element__form-filed__arrow-icon"
+    >
+      <i
+         svgIconReader
+         class="svg-icon"
+         [svgIconReader]="isPanelOpen? arrowDown: arrowUp">
+      </i>
+    </span>
+      <mat-select
+        class = "select-element__form-filed__selected-value"
+        (opened)="onSelectPanelOpen()"
+        (closed)="onSelectPanelClose()"
+        [formControl]="selectedControl"
+        [panelClass]="'dropdown-panel'"
+        name="option1">
+        <div class="breaking-line"></div>
+          <mat-option
+            *ngFor = 'let option of optionSuggestions'
+            (click)="onOptionClick(option)"
+            [value]="option.value"
+            [ngClass] = "{
+    'confirm_inactive': isResetButtonPresent() && option.value === 'confirm',
+    'confirm_active': !isResetButtonPresent() && option.value === 'confirm',
+    'reset_styles': option.value === 'reset'
+  }"
+            class = "option-block"
+            [disabled]="option.disable"
+          >
+            {{option.viewValue}}
+            <span class="check-icon" *ngIf = "option.checked">
+              <i
+                svgIconReader
+                class="svg-icon"
+                [svgIconReader]="optionChecked">
+      </i>
+            </span>
+          </mat-option>
+      </mat-select>
+  </mat-form-field>
+</div>

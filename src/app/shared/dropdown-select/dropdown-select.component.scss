@@ -1,0 +1,140 @@
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-select-arrow-wrapper {
+  display: none!important;
+}
+
+::ng-deep .mat-option-text {
+  color: #232873;
+  display: flex!important;
+  justify-content: end!important;
+  align-items: center!important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0px !important;
+}
+
+::ng-deep .mat-form-field-infix {
+  border-top: 0em solid transparent!important;
+}
+
+::ng-deep .dropdown-panel {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+
+::ng-deep .mat-select-value-text {
+  color: #232873;
+}
+::ng-deep .mat-select-min-line {
+  font-weight: 500;
+  font-size: 16px!important;
+  line-height: 19px!important;
+  font-family: "Source Code Pro", monospace;
+}
+
+::ng-deep .mat-select-panel .mat-option{
+  background-color: #FFFFFF!important;
+  border-radius: 6px;
+}
+
+::ng-deep .mat-select-panel {
+  max-height: none!important;
+  box-shadow: 0 2px 15px 0 #0000001A;
+  border: 1px solid #BDBFD5;
+  min-height: 206px;
+  min-width: 236px;
+}
+
+.select-element {
+  margin: 3rem 0 0 3rem;
+  &__form-filed {
+    position: relative;
+    width: 179px;
+    height: 44px;
+    border-radius: 30px;
+    border: 0.1rem solid;
+    color: #BDBFD5;
+    display: flex;
+    flex-direction: row!important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__arrow-icon {
+      position: absolute;
+      top: 10%;
+      left: 2rem;
+    }
+  }
+}
+
+.breaking-line {
+  position: absolute;
+  border-bottom: 1px solid #E4E4E4 !important;
+  top: 177px;
+  width: 90%;
+  right: 5%;
+}
+
+.option-block {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px!important;
+  font-family: "Ploni DL 1.1 AAA", monospace;
+  line-height: 19px!important;
+  display: flex;
+  flex-direction: row!important;
+  justify-content: center;
+  text-align: end;
+  align-items: center;
+}
+
+.check-icon {
+  margin-left: 5px;
+}
+
+.confirm_active {
+  background-color: #14008E!important;
+  border-radius: 30px;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center;
+  width: 174px;
+  margin: 40px auto 15px;
+}
+
+::ng-deep .confirm_active .mat-option-text {
+  color: #FFFFFF !important;
+  justify-content: center !important;
+  font-weight: 600;
+}
+
+.confirm_inactive {
+  background-color:  #F0F0F1!important;
+  border-radius: 30px;
+  width: 174px;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center;
+  margin: 40px auto 15px;
+}
+
+::ng-deep .confirm_inactive .mat-option-text {
+  color: #6B6E77!important;
+  justify-content: center !important;
+  font-weight: 400;
+}
+
+::ng-deep .reset_styles .mat-option-text {
+  color: #6B6E77!important;
+  justify-content: center !important;
+  text-decoration: underline;
+}
+
+.up_arrow {
+  margin-top: 5px;
+}
